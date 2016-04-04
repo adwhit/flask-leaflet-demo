@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script src="{{url_for('static', filename='jquery-2.2.2.min.js')}}"></script>
+    <script src="{{url_for('static', filename='leaflet/leaflet.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='leaflet/leaflet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='demo.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+    <h1>Hello</h1>
+    <div id="mydiv"></div>
+    <div id="llmap"></div>
+    <div>
+        <select id="distsel">
+          {% for district in districts %}
+          <option value="{{district.id}}">{{district.name}}</option>
+          {% endfor %}
+        </select>
+    </div>
+    <script src="{{url_for('static', filename='demo.js')}}"></script>
+</body>
