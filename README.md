@@ -4,6 +4,12 @@ Flask and Leaflet
 
 A simple demo integrating Flask and Leaflet.
 
+Install dependencies:
+
+```
+pip install flask flask-sqlalchemy
+```
+
 Create db: 
 
 ```
