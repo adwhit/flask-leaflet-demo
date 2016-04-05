@@ -16,7 +16,6 @@ var layer = L.layerGroup();
 
 function renderData(districtid) {
     $.getJSON("/district/" + districtid, function(obj) {
-        console.log(obj);
         var markers = obj.data.map(function(arr) {
             return L.marker([arr[0], arr[1]])
         });
